@@ -1835,7 +1835,7 @@ class MaskRCNN():
         self.model_dir = model_dir
         self.set_log_dir()
         self.keras_model = self.build(mode=mode, config=config)
-        Fix error with .append later on
+        #Fix error with .append later on
         self.keras_model.metrics_tensors = []
 
     def build(self, mode, config):
